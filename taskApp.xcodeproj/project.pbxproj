@@ -16,6 +16,7 @@
 		E0B4375322644D52007425C8 /* taskAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B4375222644D52007425C8 /* taskAppTests.swift */; };
 		E0B4375E22644D52007425C8 /* taskAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B4375D22644D52007425C8 /* taskAppUITests.swift */; };
 		E0B4376C22645E98007425C8 /* InputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B4376B22645E98007425C8 /* InputViewController.swift */; };
+		E0B4376E226574EF007425C8 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B4376D226574EF007425C8 /* Task.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		E0B4375D22644D52007425C8 /* taskAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = taskAppUITests.swift; sourceTree = "<group>"; };
 		E0B4375F22644D52007425C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E0B4376B22645E98007425C8 /* InputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputViewController.swift; sourceTree = "<group>"; };
+		E0B4376D226574EF007425C8 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,7 +89,6 @@
 				A013964E8492E4722C1DD3ED /* Pods-taskApp.debug.xcconfig */,
 				6FA99C5A1C7486B231F5490A /* Pods-taskApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -124,6 +125,7 @@
 		E0B4373C22644D52007425C8 /* taskApp */ = {
 			isa = PBXGroup;
 			children = (
+				E0B4376D226574EF007425C8 /* Task.swift */,
 				E0B4373D22644D52007425C8 /* AppDelegate.swift */,
 				E0B4373F22644D52007425C8 /* ViewController.swift */,
 				E0B4374122644D52007425C8 /* Main.storyboard */,
@@ -335,6 +337,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0B4376E226574EF007425C8 /* Task.swift in Sources */,
 				E0B4376C22645E98007425C8 /* InputViewController.swift in Sources */,
 				E0B4374022644D52007425C8 /* ViewController.swift in Sources */,
 				E0B4373E22644D52007425C8 /* AppDelegate.swift in Sources */,
@@ -513,14 +516,17 @@
 			baseConfigurationReference = A013964E8492E4722C1DD3ED /* Pods-taskApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = XLM7K96PXP;
 				INFOPLIST_FILE = taskApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = jp.techacademy.yusa.ho.taskApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = Team_DEV;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -531,14 +537,17 @@
 			baseConfigurationReference = 6FA99C5A1C7486B231F5490A /* Pods-taskApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = XLM7K96PXP;
 				INFOPLIST_FILE = taskApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = jp.techacademy.yusa.ho.taskApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = Team_DEV;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

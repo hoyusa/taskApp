@@ -1,6 +1,6 @@
-platform :ios, '12.1'
+platform :ios, '9.0'
 use_frameworks!
 
 target 'taskApp' do
-  pod 'RealmSwift', '3.11.1'
+  pod 'RealmSwift'
 end
